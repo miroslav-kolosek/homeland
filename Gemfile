@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.2.2'
+ruby '2.7.6'
 
 gemspec
 
@@ -9,10 +9,11 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'github-markup'
-gem 'devise', '~> 4.2.0'
+gem 'devise'
 gem 'jquery-rails'
 gem 'mysql2'
 gem 'puma'
+gem 'sprockets', '~>3.0'
 
 group :development, :test do
   gem 'minitest'

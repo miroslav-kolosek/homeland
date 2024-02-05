@@ -64,10 +64,10 @@ GEM
     concurrent-ruby (1.2.3)
     crass (1.0.6)
     date (3.3.4)
-    devise (4.2.1)
+    devise (4.9.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 4.1.0, < 5.1)
+      railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
     docile (1.4.0)
@@ -97,6 +97,7 @@ GEM
       net-smtp
     method_source (1.0.0)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.5)
     minitest (5.21.2)
     mysql2 (0.5.5)
     net-imap (0.4.10)
@@ -109,7 +110,8 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.2-x86_64-linux)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     puma (6.4.2)
@@ -164,9 +166,9 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sprockets (4.2.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
+      rack (> 1, < 3)
     sprockets-rails (3.2.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
@@ -187,12 +189,12 @@ GEM
     will_paginate (4.0.0)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   codecov
   coffee-rails
-  devise (~> 4.2.0)
+  devise
   factory_girl
   github-markup
   homeland!
@@ -203,10 +205,11 @@ DEPENDENCIES
   rails (~> 5.0.0)
   sass-rails
   simplecov
+  sprockets (~> 3.0)
   uglifier
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 2.7.6p219
 
 BUNDLED WITH
-   2.4.10
+   2.1.4
